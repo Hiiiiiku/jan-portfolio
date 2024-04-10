@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    background-image: radial-gradient(at 49.61% 99.50%, rgb(179, 55, 55) 0, transparent 100%), radial-gradient(at 90.43% 13.00%, rgb(45, 96, 179) 0, transparent 100%), radial-gradient(at 7.47% 15.33%, rgb(113, 172, 23) 0, transparent 100%);
+}
+
+body::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(https://grainy-gradients.vercel.app/noise.svg);
+    filter: brightness(100%), contrast(200%);
+    /* tailwind: class="absolute inset-0 bg-[url(https://grainy-gradients.vercel.app/noise.svg)] opacity-25 brightness-100 contrast-150" */
+    opacity: 25%;
+}
+
+header{
+    border-bottom: solid 1px white;
+}
+footer{
+    margin-top: auto;
+    border-top: solid 1px white;
+}
+body{
+    background-color: black;
+}
+
+header p, footer p{
+    color:white;
+}
+.points-wrapper{
+    /* height: 80vh; */
+    /* height: ; */
+    flex-grow: 2;
+    position: relative;
+}
+
+.point{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.group{
+    color: azure;
+    font-size: 2rem;
+    opacity: 50%;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+}
+
+#group-1{
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#group-2{
+    left: 10%;
+    top: 20%;
+}
+#group-3{
+    right: 10%;
+    top: 20%;
+}
+#group-4{
+    right: 0;
+    left: 0;
+    top: 90%;
+    margin: 0 auto;
+}
+
+#point-1{
+    left: 20%;
+    top: 30%;
+}
+#point-2{
+    left: 30%;
+    top: 40%;
+}
+#point-3{
+    left: 40%;
+    top: 40%;
+}
+#point-4{
+    left: 50%;
+    top: 20%;
+}
+#point-5{
+    left: 90%;
+    top: 10%;
+}
+#point-6{
+    left: 10%;
+    top: 10%;
+}
+#point-7{
+    left: 20%;
+    top: 30%;
+}
+#point-8{
+    left: 80%;
+    top: 40%;
+}
+#point-9{
+    left: 90%;
+    top: 90%;
+}
+
+
